@@ -1,0 +1,23 @@
+{
+  "name": "Poker Hand Ranker",
+  "description": "Ranks a poker hand",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "require": {
+    "phpunit/phpunit": "7.3.5"
+  },
+  "scripts": {
+    "phpunit": "phpunit --verbose --colors=always",
+    "test-poker": [
+      "phpunit --verbose --colors=always test/PokerHandTest.php"
+    ],
+    "test-all": [
+      "@phpunit"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "PokerHand\\": "src/PokerHand"
+    }
+  }
+}
